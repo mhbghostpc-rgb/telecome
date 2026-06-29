@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Company {
+  id          Int        @id @default(autoincrement())
+  name        String
+  logoUrl     String?
+  brandColor  String     @default("#000000")
+  categories  Category[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Category {
+  id          Int        @id @default(autoincrement())
+  name        String
+  companyId   Int
+  company     Company    @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  packages    Package[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Package {
+  id               Int        @id @default(autoincrement())
+  name             String
+  priceNew         Float?
+  priceRecharge    Float?
+  data             String?
+  minutes          String?
+  validity         String?
+  benefits         String?
+  activationMethod String?
+  categoryId       Int
+  category         Category   @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
