@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
+import { ReactNode, CSSProperties } from "react";
 
-export function FadeIn({ children, delay = 0, className = "", style }: { children: ReactNode, delay?: number, className?: string, style?: React.CSSProperties }) {
+export function FadeIn({ children, delay = 0, className = "", style }: { children: ReactNode, delay?: number, className?: string, style?: CSSProperties }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ export function FadeIn({ children, delay = 0, className = "", style }: { childre
   );
 }
 
-export function StaggerContainer({ children, className = "", style }: { children: ReactNode, className?: string, style?: React.CSSProperties }) {
+export function StaggerContainer({ children, className = "", style }: { children: ReactNode, className?: string, style?: CSSProperties }) {
   return (
     <motion.div
       initial="hidden"
@@ -39,7 +39,7 @@ export function StaggerContainer({ children, className = "", style }: { children
   );
 }
 
-export function StaggerItem({ children, className = "", style }: { children: ReactNode, className?: string, style?: React.CSSProperties }) {
+export function StaggerItem({ children, className = "", style }: { children: ReactNode, className?: string, style?: CSSProperties }) {
   return (
     <motion.div
       variants={{
@@ -54,7 +54,7 @@ export function StaggerItem({ children, className = "", style }: { children: Rea
   );
 }
 
-export function HoverCard({ children, className = "", style }: { children: ReactNode, className?: string, style?: React.CSSProperties }) {
+export function HoverCard({ children, className = "", style }: { children: ReactNode, className?: string, style?: CSSProperties }) {
   return (
     <motion.div
       whileHover={{ y: -8, scale: 1.02 }}
