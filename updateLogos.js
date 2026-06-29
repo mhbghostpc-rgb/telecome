@@ -3,12 +3,12 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 const logos = {
-  'STC': 'https://logo.clearbit.com/stc.com.sa',
-  'Mobily': 'https://logo.clearbit.com/mobily.com.sa',
-  'Zain': 'https://logo.clearbit.com/sa.zain.com',
-  'Salam': 'https://logo.clearbit.com/salam.sa',
-  'Virgin Mobile': 'https://logo.clearbit.com/virginmobile.sa',
-  'Lebara': 'https://logo.clearbit.com/lebara.sa'
+  'STC': 'https://www.google.com/s2/favicons?domain=stc.com.sa&sz=128',
+  'Mobily': 'https://www.google.com/s2/favicons?domain=mobily.com.sa&sz=128',
+  'Zain': 'https://www.google.com/s2/favicons?domain=sa.zain.com&sz=128',
+  'Salam': 'https://www.google.com/s2/favicons?domain=salam.sa&sz=128',
+  'Virgin Mobile': 'https://www.google.com/s2/favicons?domain=virginmobile.sa&sz=128',
+  'Lebara': 'https://www.google.com/s2/favicons?domain=lebara.sa&sz=128'
 };
 
 async function main() {

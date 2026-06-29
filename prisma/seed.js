@@ -19,12 +19,12 @@ async function main() {
 
   // Seed default companies if they don't exist
   const companies = [
-    { name: 'STC', brandColor: '#4f008c', logoUrl: 'https://logo.clearbit.com/stc.com.sa' },
-    { name: 'Mobily', brandColor: '#00a3e0', logoUrl: 'https://logo.clearbit.com/mobily.com.sa' },
-    { name: 'Zain', brandColor: '#78b82a', logoUrl: 'https://logo.clearbit.com/sa.zain.com' },
-    { name: 'Salam', brandColor: '#009775', logoUrl: 'https://logo.clearbit.com/salam.sa' },
-    { name: 'Virgin Mobile', brandColor: '#e10a0a', logoUrl: 'https://logo.clearbit.com/virginmobile.sa' },
-    { name: 'Lebara', brandColor: '#0033a0', logoUrl: 'https://logo.clearbit.com/lebara.sa' }
+    { name: 'STC', brandColor: '#4f008c', logoUrl: 'https://www.google.com/s2/favicons?domain=stc.com.sa&sz=128' },
+    { name: 'Mobily', brandColor: '#00a3e0', logoUrl: 'https://www.google.com/s2/favicons?domain=mobily.com.sa&sz=128' },
+    { name: 'Zain', brandColor: '#78b82a', logoUrl: 'https://www.google.com/s2/favicons?domain=sa.zain.com&sz=128' },
+    { name: 'Salam', brandColor: '#009775', logoUrl: 'https://www.google.com/s2/favicons?domain=salam.sa&sz=128' },
+    { name: 'Virgin Mobile', brandColor: '#e10a0a', logoUrl: 'https://www.google.com/s2/favicons?domain=virginmobile.sa&sz=128' },
+    { name: 'Lebara', brandColor: '#0033a0', logoUrl: 'https://www.google.com/s2/favicons?domain=lebara.sa&sz=128' }
   ];
 
   for (const comp of companies) {
