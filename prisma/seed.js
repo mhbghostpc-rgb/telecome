@@ -19,12 +19,12 @@ async function main() {
 
   // Seed default companies if they don't exist
   const companies = [
-    { name: 'STC', brandColor: '#4f008c' },
-    { name: 'Mobily', brandColor: '#00a3e0' },
-    { name: 'Zain', brandColor: '#78b82a' },
-    { name: 'Salam', brandColor: '#009775' },
-    { name: 'Virgin Mobile', brandColor: '#e10a0a' },
-    { name: 'Lebara', brandColor: '#0033a0' }
+    { name: 'STC', brandColor: '#4f008c', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Stc_logo.svg' },
+    { name: 'Mobily', brandColor: '#00a3e0', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Mobily_Logo.svg' },
+    { name: 'Zain', brandColor: '#78b82a', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/12/Zain_logo.svg' },
+    { name: 'Salam', brandColor: '#009775', logoUrl: 'https://salam.sa/themes/custom/salam/logo.svg' },
+    { name: 'Virgin Mobile', brandColor: '#e10a0a', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Virgin_Mobile_logo.svg' },
+    { name: 'Lebara', brandColor: '#0033a0', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Lebara_logo.svg' }
   ];
 
   for (const comp of companies) {
