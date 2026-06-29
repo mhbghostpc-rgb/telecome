@@ -67,7 +67,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
 
       {q ? (
         <FadeIn delay={0.2}>
-          <h2 className="heading-lg text-center" style={{ textAlign: "center" }}>نتائج البحث عن: "{q}"</h2>
+          <h2 className="heading-lg text-center" style={{ textAlign: "center" }}>نتائج البحث عن: &quot;{q}&quot;</h2>
           {searchResults?.length === 0 ? (
             <div className="card" style={{ textAlign: "center", padding: "4rem" }}>
               <p className="text-muted" style={{ fontSize: "1.2rem" }}>لا توجد باقات تطابق بحثك. جرب كلمات مفتاحية أخرى.</p>
